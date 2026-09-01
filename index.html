@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper: #f6f1e7;
-    --paper-2: #efe7d8;
+    --paper: #8c2320;
+    --paper-2: #7a1e1c;
     --card: #fffdf8;
     --ink: #1c2333;
     --ink-soft: #5b5847;
@@ -20,7 +20,9 @@
     --work-soft: #e4efec;
     --travel: #d1652f;
     --travel-soft: #fbe9dd;
-    --gold: #b8892b;
+    --gold: #e0ab52;
+    --onred: #fbeee2;
+    --onred-soft: #e8c4b3;
     --display: 'Fraunces', serif;
     --body: 'Work Sans', sans-serif;
     --mono: 'IBM Plex Mono', monospace;
@@ -43,9 +45,9 @@
 
   header.top{
     position:sticky; top:0; z-index:10;
-    background:rgba(246,241,231,0.9);
+    background:rgba(122,30,28,0.92);
     backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
+    border-bottom:1px solid rgba(251,238,226,0.18);
   }
   header.top .wrap{
     display:flex; align-items:center; justify-content:space-between;
@@ -56,6 +58,7 @@
     font-weight:600;
     font-size:18px;
     display:flex; align-items:center; gap:8px;
+    color:var(--onred);
   }
   .brand .mark{
     width:22px; height:22px;
@@ -66,10 +69,10 @@
     font-family:var(--mono);
     font-size:12.5px;
     text-decoration:none;
-    color:var(--ink-soft);
+    color:var(--onred-soft);
     margin-left:20px;
   }
-  nav a:hover{color:var(--ink);}
+  nav a:hover{color:var(--onred);}
 
   /* --- hero --- */
   .hero{padding:72px 0 40px;}
@@ -97,11 +100,12 @@
     line-height:1.1;
     margin:0 0 18px;
     letter-spacing:-0.01em;
+    color:var(--onred);
   }
-  h1 em{font-style:italic; color:var(--work);}
+  h1 em{font-style:italic; color:#ffd39b;}
   .lede{
     font-size:17px;
-    color:var(--ink-soft);
+    color:var(--onred-soft);
     max-width:520px;
     margin:0 0 30px;
   }
@@ -115,9 +119,9 @@
     display:inline-block;
     border:1px solid var(--ink);
   }
-  .btn.primary{background:var(--ink); color:var(--paper); font-weight:500;}
-  .btn.ghost{color:var(--ink); border-color:var(--line);}
-  .btn.ghost:hover{border-color:var(--ink);}
+  .btn.primary{background:var(--ink); color:var(--onred); font-weight:500;}
+  .btn.ghost{color:var(--onred); border-color:rgba(251,238,226,0.45);}
+  .btn.ghost:hover{border-color:var(--onred);}
   .hero-art svg{display:block; width:100%; height:auto;}
 
   /* --- section scaffolding --- */
@@ -129,8 +133,9 @@
     font-weight:600;
     font-size:clamp(24px, 3.2vw, 30px);
     margin:0 0 10px;
+    color:var(--onred);
   }
-  .section-intro{color:var(--ink-soft); max-width:560px; margin:0;}
+  .section-intro{color:var(--onred-soft); max-width:560px; margin:0;}
 
   /* --- word of the day cards (index-card style) --- */
   .word-row{
@@ -286,12 +291,12 @@
   .tip p{font-size:13.5px; color:var(--ink-soft); margin:0;}
 
   footer{
-    border-top:1px solid var(--line);
+    border-top:1px solid rgba(251,238,226,0.18);
     margin-top:70px;
     padding:28px 0 44px;
   }
   footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
-  footer p{font-family:var(--mono); font-size:12px; color:var(--ink-soft); margin:0;}
+  footer p{font-family:var(--mono); font-size:12px; color:var(--onred-soft); margin:0;}
 </style>
 </head>
 <body>
